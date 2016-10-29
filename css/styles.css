@@ -1,0 +1,79 @@
+.separator {
+	height: 100px;
+}
+
+.program-picture {
+	height: 80px;
+	width: 80px;
+	background-color: black;
+	margin-left: 40%;
+	border-radius: 40px;
+	border: 3px white double;
+}
+
+.program-symbol {
+	height: 60px;
+	width: 60px;
+	margin-left: 10%;
+	margin-top: 10%;
+	border-radius: 30px;
+}
+
+.program-names, .program-desc {
+	text-align: center;
+}
+
+.program-desc {
+	margin-bottom: 50px;
+}
+
+.class-icon {
+	color: pink;
+	font-size: 15px;
+}
+
+.class-types {
+	font-size: 125%;
+	text-decoration: underline;
+	margin-left: -5%;
+}
+
+.class-titles {
+	font-weight: bold;
+}
+
+.class-titles:hover {
+	cursor: pointer;
+}
+
+.class-descrip {
+	margin-left: 5%;
+}
+
+.logo {
+	display: inline;
+	float: left;
+}
+
+#notice {
+	float: right;
+}
+
+#notice-img {
+	max-height: 100px;
+}
+
+#notice-img:hover {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+h1{
+	padding: 150px 0 0 0;
+	font-size: 2em; /* default 1.17em */
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}

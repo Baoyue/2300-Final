@@ -1,0 +1,725 @@
+/* ----------TAGS---------- 
+
+*/
+
+/* ----------TYPOGRAPHY---------- */
+
+body {
+	margin: 0;
+	width: 100%;
+	font-family: 'Open Sans';
+	background-color: hsla(202,28%,77%,0.25);
+	color: hsla(0,0%,25%,1);
+}
+
+a {
+	text-decoration: none;
+}
+
+a.link {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat';
+	font-weight: 400; /* bold */
+	font-size: 1em; /* default 1em */
+	font-variant: small-caps;
+	letter-spacing: 1px;
+	color: white;
+}
+
+a.email {
+	font-weight: 600; /* bold */
+	font-size: 1em; /* default 1em */
+	font-style: italic;
+	font-variant: small-caps;
+	text-transform: lowercase;
+	letter-spacing: 1.5px;
+	border-bottom: 1px dashed white;
+	color: hsla(202,28%,77%,1);
+}
+
+h1.header {
+	font-size: 3em; /* default 2em */
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 9px;
+	line-height: 96px;
+}
+
+h2.subheader {
+	font-family: 'Montserrat';
+	font-size: 1.8em; /* default 1.8em */
+	font-weight: 600;
+	font-variant: small-caps;
+	text-transform: lowercase;
+	letter-spacing: 2px;
+	margin: 0;
+	padding: 0;
+}
+
+h3.title {
+	font-size: 2em; /* default 1.17em */
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+h4.subtitle {
+	font-family: 'Montserrat';
+	font-size: 1em; /* default 1.33em */
+	font-weight: 400;
+	font-variant: small-caps;
+	text-transform: lowercase;
+	letter-spacing: 1.5px;
+}
+
+h5.desc {
+	margin: 0;
+	font-size: 0.75em; /* default 0.83em */
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 18px;
+}
+
+h6 {
+	font-size: 0.5em; /* default 0.67em */
+}
+
+p {
+	font-size: 0.9em; /* default 1em */
+	font-weight: 500;
+	letter-spacing: 1px;
+	line-height: 24px;
+}
+
+p.error {
+	font-weight: 600;
+	color: hsla(352,38%,73%,1);
+}
+
+/* ----------DIVS---------- */
+
+div.section {
+	margin: 0;
+	padding: 150px 165px 150px 150px;
+	/* border-bottom: 1px solid hsla(0,0%,35%,1); */
+}
+
+div.hero {
+	height: 750px;
+}
+
+div.gradient {;
+	width: 100vw;
+	height: 750px;
+}
+
+div.modal {
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 150px 50px 150px 50px;
+	width: 300px;
+	height: 450px;
+}
+
+div.left { /* footer */
+	float: left;
+	padding-left: 50px;
+}
+
+div.right {
+	float: right;
+}
+
+/* ----------NAVBAR---------- */
+
+.logo {
+	margin: 0;
+	padding: 0 0 15px 50px;
+	width: 15px;
+	display: inline-block;
+}
+
+#primary_nav_wrap{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	background-color: hsla(176,100%,33%,1);}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#primary_nav_wrap ul a
+{
+	display:block;
+	text-decoration:none;
+	padding:0 15px;
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding: 15px 0 16px 20px;
+}
+
+#primary_nav_wrap .link-wrapper>li:first-child {
+	padding-left: 50px;
+}
+
+
+#primary_nav_wrap ul ul li:hover
+{
+	background-color: hsl(9, 61%, 49%);
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	padding:0;
+	background: hsla(352,38%,73%,1);
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	margin: 0;
+	padding: 10px 10px 15px 10px;
+	width: 150px;
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block;
+	z-index:1;
+}
+
+/* ----------INDEX---------- */
+
+.index {
+	background-image: url('../img/img3_edit.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	color: white;
+}
+
+.index .gradient {
+	padding-top: 150px;
+	padding-bottom: 150px;
+	height: 450px;
+	background: -webkit-linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.9)); /* Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.9)); /* Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.9)); /* Frefox 3.6 to 15 */
+	background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.9)); /* Standard syntax */
+}
+
+.index .header {
+	text-align: center;
+}
+
+.index .subheader {
+	text-align: center;
+}
+
+/*-----------EVENTS-------------*/
+
+.events .title {
+	margin-bottom: 50px;
+}
+
+.eventItem {
+	padding: 20px 50px 20px 50px;
+	background-color: #B4C9D5;
+	color: #3A606E;
+	margin: 50px 0;
+}
+.eventItem .itemSub {
+	float: left;
+	padding-right: 50px;
+	font-weight: 600;
+}
+.eventItem a {
+	font-weight: 600;
+	font-style: italic;
+	color: #d66471;
+}
+.itemButton {
+	padding: 10px 10px 10px 10px;
+	background-color: #3A606E;
+	text-align: center;
+	
+	display: inline-block;
+	margin-right: 50px;
+	font-size: 0.8em;
+}
+.itemButton a {
+	color: white;
+	font-weight: 500;
+}
+
+.adminOpt {
+
+	margin-right: 80px;
+	margin-bottom: 50px;
+	padding: 25px 35px 25px 35px;
+	width: 180px;
+	text-align: center;
+	float: left;
+}
+.adminOpt:nth-of-type(1) {
+	background-color: hsla(352,38%,73%,1);
+}
+
+.adminOpt:nth-of-type(2) {
+	background-color: hsla(196,31%,33%,1);
+}
+
+.adminOpt:nth-of-type(3) {
+	background-color: hsla(176,100%,33%,1);
+}
+.adminOpt a {
+	color: #FFF;
+}
+.adminOpt p {
+	color: #FFF;
+}
+.adminCard {
+	margin: 0 auto;
+	width: 100%;
+}
+
+/* ----------CONTACTS---------- */
+
+.contacts {
+	color: hsla(0,0%,25%,1);
+}
+
+.contacts .title {
+	margin-bottom: 50px;
+}
+
+.card {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+	padding: 25px 35px 25px 35px;
+	height: 150px;
+}
+
+.card h3.title {
+	margin-bottom: 50px;
+}
+
+.card h4.subtitle {
+	margin: 0;
+	color: hsla(0,0%,100%,0.85); 
+}
+
+.card h5.desc {
+	margin-top: 6px;
+	color: white;
+}
+
+.card.red {
+	background-color: hsla(9,61%,49%,1);
+}
+
+.card.red a.email {
+	color: hsla(352,38%,73%,1);
+}
+
+.card.teal {
+	background-color: hsla(196,31%,33%,1);
+}
+
+.card.teal a.email {
+	color: hsla(176,100%,33%,1);
+}
+
+.card.pink {
+	background-color: hsla(352,38%,73%,1);
+}
+
+.card.pink a.email {
+	color: hsla(9,61%,49%,1);
+}
+
+.card.dark {
+	background-color: hsla(0,0%,25%,1);
+}
+
+.card.dark a.email {
+	color: white;
+}
+
+.card.seafoam {
+	background-color: hsla(176,100%,33%,1);
+}
+
+.card.seafoam a.email {
+	color: hsla(0,0%,25%,1);
+}
+
+.card.skyblue {
+	background-color: hsla(202,28%,77%,1);
+}
+
+.card.skyblue a.email {
+	color: hsla(196,31%,33%,1);
+}
+
+.card.tall {
+	height: 200px;
+}
+
+/* ----------COMMITTEES---------- */
+
+.committees h3.title {
+	margin-bottom: 50px;
+}
+
+/* ----------GAMES-------------*/
+
+.games .title {
+	margin-bottom: 50px;
+}
+
+.games .icons {
+	width: 360px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ----------FAQ---------- */
+
+.faq .title {
+	margin-bottom: 50px;
+}
+
+.faq-q {
+	margin-bottom: 50px;
+}
+
+.faq-q:last-child {
+	margin-bottom: 0;
+}
+
+p.question {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	font-weight: 600; /* semibold */
+	font-style: italic;
+	border-bottom: 1px solid hsla(0,0%,25%,1);
+}
+
+p.answer {
+	font-size: 0.75em; /* default 1em */
+	font-weight: 300;
+	line-height: 24px;
+}
+
+/* ----------LOGIN---------- */
+
+.log {
+	color: white;
+}
+
+.log.hero {
+	background-image: url('../img/img4_edit.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.log .gradient {
+	background: -webkit-linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.9)); /* Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.9)); /* Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.9)); /* Frefox 3.6 to 15 */
+	background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.9)); /* Standard syntax */
+}
+
+.log .modal {
+	background-color: hsla(176,100%,33%,0.5);
+}
+
+.log input[type='submit'] {
+	color: hsla(176,100%,33%,1);
+}
+
+.log a {
+	color: #D5A0A7;
+	font-weight: 600;
+}
+
+/* ----------SIGN UP---------- */
+
+.signup {
+	color: white;
+}
+
+.signup.hero {
+	height: 1200px;
+	background-image: url('../img/img2_edit.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.signup .gradient {
+	height: 1200px;
+	background: -webkit-linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.9)); /* Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.9)); /* Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.9)); /* Frefox 3.6 to 15 */
+	background: linear-gradient(rgba(255,255,255,.75), rgba(34,34,34,.9)); /* Standard syntax */
+}
+
+.signup .modal {
+	height: 900px;
+	background-color: hsla(196,31%,33%,0.5);
+}
+
+.signup input[type='submit'] {
+	color: hsla(196,31%,33%,1);
+}
+
+.signup a {
+	color: #D5A0A7;
+	font-weight: 600;
+}
+
+/* ----------FOOTER---------- */
+
+.footer {
+	width: 100vw;
+	height: 150px;
+	padding: 0;
+	padding-top: 20px;
+	background-color: hsla(202,28%,77%,1);
+	color: #3A606E;
+}
+
+/* ----------FORMS---------- */
+
+form {
+	margin: 0;
+	margin-top: 25px;
+}
+
+.modal .title {
+	/* margin-bottom: 50px; */
+	font-weight: 600;
+	text-align: center;
+}
+
+.modal p {
+	margin: 10px auto 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	text-align: center;
+}
+
+.modal p.msg {
+	width: 300px;
+}
+
+.modal p.error {
+	width: 300px;
+}
+
+.modal p.password {
+	margin-top: -10px;
+	margin-bottom: 25px;
+	width: 315px;
+}
+
+.login-form input {
+	margin: 5px auto 10px auto;
+	padding: 12px 15px 12px 25px;
+	width: 225px;
+	display: block;
+	font-size: 0.75em; /* same as p */
+	font-weight: 300;
+	letter-spacing: 1px;
+	/* line-height: 24px; */
+	border: 1px solid hsla(0,0%,100%,0.65);
+	background: transparent;
+	color: white;
+}
+
+.login-form input[type='text'] {
+	padding: 12px 15px 12px 25px;
+	width: 225px;
+}
+
+.login-form input:focus {
+	outline: none;
+	background-color: hsla(0,0%,100%,0.15);
+}
+
+.login-form input[type='submit'] {
+	margin: 25px 88px 25px 88px;
+	padding: 0;
+	padding-bottom: 2px;
+	width: 124px;
+	height: 40px;
+	display: inline-block;
+	font-family: 'Montserrat'; /* same as h4.subtitle */
+	font-size: 1em; /* default 1.33em */
+	font-weight: 700;
+	font-variant: small-caps;
+	text-transform: lowercase;
+	text-align: center;
+	letter-spacing: 1px;
+	cursor: pointer;
+	border: none;
+	border-radius: 0;
+	background-color: hsla(0,0%,100%,0.9);
+}
+
+.login-form label {
+	font-size: 0.75em; /* same as p */
+	font-weight: 300;
+	letter-spacing: 1px;
+	 line-height: 24px; 
+}
+/* ----------BAOYUE'S-------------*/
+
+h3.position, h3.infoTitle{
+	color: #000;
+	font-weight: 500;
+	margin: 20px 0 10px 0;
+}
+
+h3.info {
+	color: #000;
+	font-weight: 300;
+	font-family: 'Montserrat';
+	margin: 0;
+	margin-top: 8px;
+	font-size: 1em;
+}
+
+div.clear {
+	clear: both;
+}
+
+div.container {
+	width: calc(100vw - 300px);
+}
+h3.msg {
+	color: #00A89D;
+}
+
+/*-----------Tables-----------*/
+table {
+	width: 900px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+table th {
+	font-weight: 700px;
+	color: #3A606E;
+	border-bottom: solid 3px #3A606E;
+	border-top: solid 3px #3A606E;
+	background-color: #B4C9D5;
+}
+table th,td {
+	height: 40px;
+}
+table tr:nth-child(odd) {
+	background-color: #B4C9D5;
+}
+.summary {
+	margin: 20px 0 40px 0;
+	color: #3A606E;
+}
+.summary span {
+	font-weight: 700;
+}
+
+/*-----------Forms------------*/
+input, select, textarea {
+	width: 225px;
+	margin-top: 10px;
+	padding: 12px;
+	display: block;
+	font-weight: 300;
+	letter-spacing: 1.2px;
+	color: hsla(0,0%,65%,1);
+	background: transparent;
+	border: 1px solid hsla(0,0%,35%,1);
+}
+
+input:focus, select:focus {
+	outline: none;
+}
+
+select {
+	width: 175px;
+	height: 35px;
+}
+
+input[type='text'] {
+	padding: 10px 25px 10px 25px;
+	width: 225px;
+}
+
+textarea {
+	width: 400px;
+}
+
+input[type='submit'] {
+	width: 180px;
+	height: 40px;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 0.9em;
+	font-variant: small-caps;
+	text-transform: lowercase;
+	letter-spacing: 2px;
+	background-color: #00A89D;
+	border: 1px solid #00A89D;
+	border-radius: 0;
+	cursor: pointer;
+	text-align: center;
+	line-height: 1;
+	color: #F6FCFC;
+}
+
+input[type='submit']:not(:last-child) {
+	margin-right: 18px;
+}
+
+input[type='checkbox'] {
+	display: inline-block;
+}
+
+@media (max-width: 650px) {
+	.form-wrapper {
+		margin-left: auto;
+		margin-right: auto;
+		width: 287px;
+		display: block;
+	}
+
+	input[type='submit']:not(.login) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
